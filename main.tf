@@ -19,8 +19,8 @@ resource "aws_security_group" "mySG" {
   ingress {
     cidr_blocks = ["99.106.37.194/32"]
     description = "mysg"
-    from_port   = 8080
-    protocol    = "tcp"
-    to_port     = 8080
+    from_port   = 22
+    protocol    = "ssh"
+    to_port     = 22
   }
 }
