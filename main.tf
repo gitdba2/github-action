@@ -20,7 +20,7 @@ resource "aws_security_group" "mySG" {
     cidr_blocks = ["99.106.37.194/32"]
     description = "mysg"
     from_port   = 22
-    protocol    = "ssh"
+    protocol    = "TCP"
     to_port     = 22
   }
 }
