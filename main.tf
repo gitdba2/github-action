@@ -11,11 +11,12 @@ resource "aws_instance" "example" {
 }
 
 resource "aws_security_group" "mySG" {
-  name = "onlySG"
-  vpc_id = "vpc-08dd3b874c13352da"
+  name        = "onlySG"
+  description = "access from dallas"
+  vpc_id      = "vpc-08dd3b874c13352da"
 
   ingress {
-    cidr_blocks = [ "0.0.0.0/0" ]
+    cidr_blocks = ["99.106.37.194/32"]
     description = "mysg"
     from_port   = 8080
     protocol    = "tcp"
