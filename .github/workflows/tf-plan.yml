@@ -35,9 +35,7 @@ jobs:
       - name: "Setup - Terraform CLI"
         uses: hashicorp/setup-terraform@v1
 
-      # -------------------------------------------------------------
       # checks whether the configuration has been properly formatted
-      # -------------------------------------------------------------
       - name: Terraform Format
         id: fmt
         run: terraform fmt -check
