@@ -3,10 +3,10 @@ name: "Terraform Apply"
 # Trigger when commits are pushed to the master branch .
 on:
   push:
+    paths:
+      - '**.yml'
     branches:
       - main
-    paths-ignore:
-      - '!.github/workflows/**'
 
 
 jobs:
