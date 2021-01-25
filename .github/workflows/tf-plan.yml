@@ -35,8 +35,8 @@ jobs:
       - name: "Setup - Terraform CLI"
         uses: hashicorp/setup-terraform@v1
       
-      - name: "TFLINT"
-        uses: lablabs/setup-tflint@v1
+      #- name: "TFLINT"
+      #  uses: lablabs/setup-tflint@v1
 
       # checks whether the configuration has been properly formatted
       - name: Terraform Format
