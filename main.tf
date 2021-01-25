@@ -4,10 +4,10 @@ resource "aws_instance" "example" {
   #vpc_security_group_ids = ["sg-0eaf1c28c7f786ea6"]
   vpc_security_group_ids = [aws_security_group.mySG.id]
   ami                    = "ami-04d29b6f966df1537"
-  instance_type          = "t2.micro"
+  instance_type          = "t2.microx"
 
   tags = {
-    Name = "mytag15"
+    Name = "mytag16"
   }
 }
 
