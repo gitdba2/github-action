@@ -8,6 +8,7 @@ on:
     paths-ignore:
       - '!.github/workflows/**'
 
+
 jobs:
   terraform-plan:
     name: "Terraform Apply"
