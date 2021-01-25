@@ -39,7 +39,6 @@ jobs:
       - name: Terraform Format
         id: fmt
         run: terraform fmt -check
-        # tflint
         
       # Init pulls credentials from the .aws/credentials file by default
       - name: "Run - Terraform Init"
@@ -47,6 +46,9 @@ jobs:
 
       - name: "Run - Terraform Validate"
         run: terraform validate
+
+      #-name: "Run - TFLINT"
+        #run: tflint
 
       # The id value is used for reference in the comment step via "steps.plan.outputs.stdout"
       # Note: Color is disabled to prevent messy characters from appearing in the pull request comment
