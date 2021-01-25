@@ -3,7 +3,7 @@ name: "Terraform Apply"
 # Trigger when commits are pushed to the master branch .
 on:
   push:
-    paths:
+    ignore_paths:
       - '**.yml'
     branches:
       - main
