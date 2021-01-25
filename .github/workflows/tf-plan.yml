@@ -50,8 +50,11 @@ jobs:
       - name: "Run - Terraform Validate"
         run: terraform validate
       
-      - name: Terraform tflint
-        run: tflint
+      - name: tflint
+        uses: reviewdog/action-tflint@master  
+        with:
+          github_token: ${{ secrets.GITHUB_TOKEN }}
+        
 
       # The id value is used for reference in the comment step via "steps.plan.outputs.stdout"
       # Note: Color is disabled to prevent messy characters from appearing in the pull request comment
